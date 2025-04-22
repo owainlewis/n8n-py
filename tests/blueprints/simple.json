@@ -1,0 +1,53 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -280,
+        -120
+      ],
+      "id": "7b09cfe2-a38e-4e81-8faa-0de82801b0fb",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "command": "echo \"Hello world\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        -120
+      ],
+      "id": "837d9fc3-2494-4b80-aab7-446904cff26e",
+      "name": "Execute Command"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Execute Command",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "b2ac0291-e473-4716-9b6d-25fed64cdefd",
+  "meta": {
+    "instanceId": "2c8959b12fc3a9c8e45b6b871fe1d507eb060920e1597cbaf3f06d7ed5d912d0"
+  },
+  "id": "ANdyINIHBkCKdueP",
+  "tags": []
+}
